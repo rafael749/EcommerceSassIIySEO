@@ -1,12 +1,30 @@
 /********************************************************
                     ver mas
 *********************************************************/
-.h2__verMas{
+@mixin verMas{
     color:$ColorRojoMain;
     text-decoration: none;
 }
-.h2__verMas:hover{
+
+.h1__verMas{
+    @include verMas();
+    }
+
+.h2__verMas{
+@include verMas();
+}
+
+@mixin verMas-hover {
     color: $ColorRojoMain;
+
+}
+
+.h1__verMas:hover{
+    @include verMas-hover();
+}
+
+.h2__verMas:hover{
+    @include verMas-hover();
 }
 
 /********************************************************

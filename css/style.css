@@ -12,7 +12,7 @@
   padding: 0px 11%;
   color: #fbfbfb; }
 
-a {
+a span {
   color: white; }
 
 .faq-izq {
@@ -40,6 +40,30 @@ a {
   color: #c4302b;
   transform: scale(1.15); }
 
+.facebook:hover {
+  transition: width 2s, height 2s;
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4);
+  /* Safari 3-8 */
+  transform: scale(1.4); }
+
+.twitter:hover {
+  transition: width 2s, height 2s;
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4);
+  /* Safari 3-8 */
+  transform: scale(1.4); }
+
+.youtube:hover {
+  transition: width 2s, height 2s;
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4);
+  /* Safari 3-8 */
+  transform: scale(1.4); }
+
 .instagram {
   display: inline-block;
   width: 17px;
@@ -53,6 +77,14 @@ a {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); }
+
+.instagram:hover {
+  transition: width 2s, height 2s;
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4);
+  /* Safari 3-8 */
+  transform: scale(1.4); }
 
 .container__manual {
   background-color: #1a1717;
@@ -132,7 +164,11 @@ ul {
   font-size: 20px;
   color: #ffffff;
   margin-top: 0;
-  padding-top: 5px; }
+  padding-top: 5px;
+  transition: width 2s, height 2s, transform 2s; }
+
+.sidebar-social-casero i:hover {
+  transform: rotate(360deg); }
 
 .sidebar-social-casero a {
   text-decoration: none;
@@ -151,6 +187,7 @@ ul {
   font-family: 'Montserrat';
   letter-spacing: 1px; }
 
+/* CSS para posicionar el bade cerca del carrito*/
 .cart {
   position: relative; }
 
@@ -220,9 +257,16 @@ ul {
 /********************************************************
                     ver mas
 *********************************************************/
+.h1__verMas {
+  color: #D10024;
+  text-decoration: none; }
+
 .h2__verMas {
   color: #D10024;
   text-decoration: none; }
+
+.h1__verMas:hover {
+  color: #D10024; }
 
 .h2__verMas:hover {
   color: #D10024; }
@@ -236,7 +280,7 @@ ul {
 .grillaPadre {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+  grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
   justify-content: space-evenly;
   align-items: center;
   justify-items: flex-start;
@@ -246,8 +290,8 @@ ul {
   font-family: 'Ubuntu', sans-serif;
   background-color: #ececec;
   border-top: 3px solid #d6d4d4; }
-  .grillaPadre .h2__titulo1 {
-    grid-area: h2__titulo1;
+  .grillaPadre .h1__titulo1 {
+    grid-area: h1__titulo1;
     margin-top: 40px; }
   .grillaPadre .h2__titulo2 {
     grid-area: h2__titulo2;
@@ -419,16 +463,12 @@ html {
   color: #dfdfdf;
   border-top: 3px solid #D10024; }
 
+.footer__pointer {
+  cursor: pointer; }
+
 /***********************************************************
 MEDIAS QUERYS
 ************************************************************/
-/*
-
-E  S T O Y    C   O  N      M  I  X  I  N ->
-
-
-
-*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .carrusel {
     height: 350px; }
@@ -437,7 +477,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -447,7 +487,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1"  "producto1" "producto2" "producto3"  "producto4" "h2__titulo2" "producto5" "producto6" "producto7" "producto8"; }
+    grid-template-areas: "h1__titulo1"  "producto1" "producto2" "producto3"  "producto4" "h2__titulo2" "producto5" "producto6" "producto7" "producto8"; }
   .Suscribirse {
     margin-top: 240%;
     font-size: 13px; }
@@ -468,7 +508,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -478,7 +518,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1 h2__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
+    grid-template-areas: "h1__titulo1 h1__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
   .card__css-manual img {
     width: 100%;
     height: 250px;
@@ -501,7 +541,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -511,7 +551,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1 h2__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
+    grid-template-areas: "h1__titulo1 h1__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
   .card__css-manual img {
     width: 100%;
     height: 250px;
@@ -527,7 +567,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -537,7 +577,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3" "producto4 . ." "h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7" "producto8 . ."; }
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3" "producto4 . ." "h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7" "producto8 . ."; }
   .card__css-manual img {
     width: 100%; }
   .Suscribirse {
@@ -547,7 +587,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -557,7 +597,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8"; }
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8"; }
   .card__css-manual img {
     width: 100%; }
   .Suscribirse {
@@ -567,7 +607,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
   .grillaPadre {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
@@ -577,7 +617,7 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8"; }
+    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8"; }
   .card__css-manual img {
     width: 100%; }
   .Suscribirse {
@@ -589,6 +629,11 @@ E  S T O Y    C   O  N      M  I  X  I  N ->
     transition: all .4s ease-in-out; }
   .Suscribirse {
     margin-top: 20%; } }
+
+@media screen and (max-width: 1200px) {
+  .card__css-manual img:hover {
+    transform: scale(1.05, 1.05);
+    transition: all .4s ease-in-out; } }
 
 @media screen and (min-width: 769px) {
   .ul__li a:hover, .ul__li a:focus {

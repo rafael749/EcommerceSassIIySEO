@@ -6,7 +6,7 @@
     display: $display;
     grid-template-columns: $columnas;
     grid-template-areas:
-    "h2__titulo1 h2__titulo1 h2__titulo1 h2__titulo1"
+    "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1"
     "producto1 producto2 producto3 producto4"
     "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
     "producto5 producto6 producto7 producto8";
@@ -26,8 +26,8 @@
 
     @include grilla(grid, repeat(4, 1fr), 3%, 5% 0, 0 10%);
 
-    & .h2__titulo1{
-        grid-area: h2__titulo1;
+    & .h1__titulo1{
+        grid-area: h1__titulo1;
         margin-top: 40px;
     }
 

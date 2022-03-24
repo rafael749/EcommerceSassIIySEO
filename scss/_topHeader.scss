@@ -7,8 +7,10 @@
     color: #fbfbfb;
 }
 
-a{
+a {
+    & span{
     color: white;
+    }
 }
 
 .faq-izq{
@@ -43,6 +45,25 @@ a{
     transform: scale(1.15);
 }
 
+@mixin redes_sociales-hover{
+transition: width 2s, height 2s;
+-ms-transform: scale(1.4); /* IE 9 */
+-webkit-transform: scale(1.4); /* Safari 3-8 */
+transform: scale(1.4); 
+}
+
+.facebook:hover{
+    @include redes_sociales-hover;
+}
+
+.twitter:hover{
+    @include redes_sociales-hover();
+}
+
+.youtube:hover{
+    @include redes_sociales-hover();
+}
+
 .instagram {
     display: inline-block;
     width: 17px;
@@ -58,6 +79,9 @@ a{
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
 
+.instagram:hover{
+    @include redes_sociales-hover();
+}
 .container__manual {
     background-color: $backgroundColor;
     padding: 0px 11%;
