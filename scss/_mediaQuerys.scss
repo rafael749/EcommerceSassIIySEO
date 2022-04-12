@@ -5,11 +5,17 @@ MEDIAS QUERYS
 
 
 @media screen and (min-width:320px) and (max-width:480px){
-    .carrusel{
-        height: 350px;
+
+    .label__menu{
+        padding-left: 5px;
     }
-    .carousel-item img{
-        max-width: 600px;
+
+    .sidebar-social-casero{
+        padding: 0;
+    }
+
+    .iconMEnu__span{
+        display: none;
     }
     .grillaPadre{
         @include grilla(grid, repeat(1, 1fr), 1%, 10% 0, 0 8%);
@@ -28,7 +34,7 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 240%;
+        margin-top: 120%;
         font-size: 13px;
     }
     
@@ -38,22 +44,30 @@ MEDIAS QUERYS
 
     .Suscribirse form input {
         width: 100%;
-    font-size: 20px;
+    font-size: 1.1rem;
     }
 
     .Suscribirse form button {
         width: 80%;
         font-size: 20px;
     }
+
+    .card-body {
+    flex:0;
+    padding:0;
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:600px){
-    .carrusel{
-        height: 350px;
+
+    .label__menu{
+        padding-left: 20px;
     }
-    .carousel-item img{
-        max-width: 600px;
+
+    .sidebar-social-casero{
+        padding: 0;
     }
+
     .grillaPadre{
         @include grilla(grid, repeat(2, 1fr), 3%, 5% 0, 0 8%);
         grid-template-areas:
@@ -72,7 +86,7 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 130%;
+        margin-top: 60%;
         font-size: 15px;
     }
     
@@ -90,12 +104,11 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:601px) and (max-width:768px){
-    .carrusel{
-        height:400px;
+
+    .sidebar-social-casero{
+        padding: 0;
     }
-    .carousel-item img{
-        max-width: 800px;
-    }
+
     .grillaPadre{
         @include grilla(grid, repeat(2, 1fr), 3%, 5% 0, 0 8%);
 
@@ -115,17 +128,11 @@ MEDIAS QUERYS
     }
 
     .Suscribirse {
-        margin-top: 110%;
+        margin-top: 50%;
     }
 }
 
-@media screen and (min-width:769px) and (max-width: 1024px){
-    .carrusel{
-        height: 550px;
-    }
-    .carousel-item img{
-        max-width: 1024px;
-    }
+@media screen and (min-width:769px) and (max-width: 1200px){
 
     .grillaPadre{
         @include grilla(grid, repeat(3, 1fr), 3%, 0% 0, 0 8%);
@@ -147,16 +154,29 @@ MEDIAS QUERYS
         margin-top: 40%;
     }
 }
-
+@media screen and (min-width:1025px){
+    .menu ul {
+        padding-left: 0%;
+    }
+}
+@media screen and (min-width:993px) and (max-width: 1200px){
+    .container__manualTopHeader-ul{
+        margin-left: -30px;
+    }
+}
+/*
 @media screen and (min-width:1025px) and (max-width:1200px){
 
     .grillaPadre{
-        @include grilla(grid, repeat(4, 1fr), 3%, 0% 0%, 0 5%);
+        @include grilla(grid, repeat(3, 1fr), 3%, 0% 0%, 0 5%);
+
         grid-template-areas:
-        "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1"
-        "producto1 producto2 producto3 producto4"
-        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
-        "producto5 producto6 producto7 producto8";
+        "h1__titulo1 h1__titulo1 h1__titulo1"
+        "producto1 producto2 producto3"
+        "producto5 . ."
+        "h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto4 producto5 producto6"
+        "producto7 . .";
     }
         
     .card__css-manual img{
@@ -167,7 +187,7 @@ MEDIAS QUERYS
         margin-top: 20%;
     }
 }
-
+*/
 @media screen and (min-width:1201px) and (max-width : 1400px){
 
     .grillaPadre{
@@ -190,6 +210,16 @@ MEDIAS QUERYS
 }
 
 @media screen and (min-width:1400px){
+
+    .container__manualTopHeader-ul{
+        margin-left: -30px;
+    }
+    .menu ul {
+        padding-left: 5%;
+    }
+    .container{
+        max-width: 80%;
+    }
     .card__css-manual img:hover{
         transform: scale(1.15,1.15);
         transition: all .4s ease-in-out;
@@ -200,6 +230,7 @@ MEDIAS QUERYS
 }    
 
 @media screen and (max-width:1200px){
+
     .card__css-manual img:hover{
         transform: scale(1.05,1.05);
         transition: all .4s ease-in-out;
@@ -207,6 +238,17 @@ MEDIAS QUERYS
 } 
 
 @media screen and (min-width:769px){
+
+    /* a partir de 769px aplica el efecto del buscador*/
+    @keyframes animate{
+        0%,10%,100%{
+        width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+
     .ul__li a:hover, .ul__li a:focus {
         background-size: 90% 2px;
         color: $ColorRojoMain; 

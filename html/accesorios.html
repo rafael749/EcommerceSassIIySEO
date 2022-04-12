@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--SEO-->
-     <meta name="keywords" content="Accesorios Smartphone, Carcasas Originales para tu Celular Tablet,Cables Usb, Cargadores originales">
-     <meta name="description" content="Los mejores Accesorios para tus dispositivos en Ecommerce  Web Developer">
+    <!--SEO-->
+    <meta name="keywords"
+        content="Accesorios Smartphone, Carcasas Originales para tu Celular Tablet,Cables Usb, Cargadores originales">
+    <meta name="description" content="Los mejores Accesorios para tus dispositivos en Ecommerce  Web Developer">
     <!--Google Apis-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
@@ -28,13 +29,12 @@
 
     <div class="container__manualTopHeader">
         <div class="row justify-content-start">
-            <div
-                class="d-flex  justify-content-center justify-content-lg-start col-12 col-lg-9 col-md-12 col-sm-12 m-0 p-1">
+            <div class="d-flex  justify-content-center justify-content-lg-start col-12 col-lg-9 col-md-12 col-sm-12">
                 <form class="d-flex justify-content-center justify-content-lg-start col-sm-12">
-                    <ul>
-                        <li>
-                            <a class="nav-link nav__link" aria-current="page" href="contacto.html"><i class="fas fa-envelope faq-izq"></i><span class="faq-izq-contacto">
-                                Info@rafaelmiranda.store</span></a>
+                    <ul class="container__manualTopHeader-ul">
+                        <li> <a class="nav-link nav__link" aria-current="page" href="contacto.html"><i
+                                    class="fas fa-envelope faq-izq"></i><span class="faq-izq-contacto">
+                                    Info@MirandaWebSoluciones.com</span></a>
                         </li>
                     </ul>
                 </form>
@@ -55,13 +55,12 @@
     <section class="container__manual background">
         <div class="row justify-content-start">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div
-                    class="d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-start col-12 col-lg-3 col-md-3 col-sm-4">
+                <div class="d-flex justify-content-center justify-content-lg-start col-12 col-lg-3">
                     <a class="navbar-brand" href="../index.html"><img src="../img/logo.PNG" alt="logo" width=""
                             class="img__logo"></a>
                 </div>
                 <div
-                    class="d-flex  justify-content-end justify-content-sm-end justify-content-md-end justify-content-lg-center col-12 col-lg-6 col-md-9 col-sm-8">
+                    class="d-flex  justify-content-end justify-content-sm-end justify-content-md-end justify-content-lg-center col-12 col-lg-6">
                     <form class="formulario__Padre d-flex">
                         <input class="form__buscar" type="search" placeholder="Buscar Producto.." aria-label="Search">
                         <!--  <button class="btn btn-outline-success btn__buscar" type="submit">Search</button>-->
@@ -69,14 +68,14 @@
                     </form>
                 </div>
                 <ul
-                    class=" sidebar-social-casero form__login justify-content-around justify-content-sm-around justify-content-lg-evenly justify-content-md-around  container col-12 col-lg-3 col-md-12">
-                    <li><i class="fa fa-user"></i><span> Ingresar</span></li>
-                    <li class="cart">
-                        <i class="fas fa-heart"></i><span> Deseos</span>
+                    class=" sidebar-social-casero form__login justify-content-around justify-content-sm-around justify-content-lg-evenly justify-content-md-around  container col-12 col-lg-3">
+                    <li><a href="perfilUsuario.html"><i class="fa fa-user"></i><span> Usuario</span></a></li>
+                    <li class="cart"><a href="listaDeseos.html">
+                            <i class="fas fa-heart"></i><span> Deseos</span></a>
                         <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">8</span>
                     </li>
-                    <li class="cart">
-                        <i class="fas fa-shopping-cart"></i><span> Carrito</span>
+                    <li class="cart"><a href="pasarelaDePago.html">
+                            <i class="fas fa-shopping-cart"></i><span> Carrito</span></a>
                         <span id="" data-action="cart-can" class="cart_menu_num badge rounded-circle">5</span>
                     </li>
                 </ul>
@@ -85,28 +84,19 @@
     </section>
 
     <!-------------------------------------------------------------MENU------------------------------------------------------------------------------------->
-
-    <section class="container p-0">
-        <nav class="navbar navbar-expand-lg navbar-light nav__bar">
-            <!--bg-light-->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ul__li">
-                        <a class="nav-link nav__link" aria-current="page" href="../index.html">HOME</a>
-                        <a class="nav-link nav__link" aria-current="page" href="ofertas.html">OFERTAS</a>
-                        <a class="nav-link nav__link" aria-current="page" href="tecnologias.html">TECNOLOGIA</a>
-                        <a class="nav-link nav__link" aria-current="page"
-                            href="electrodomesticos.html">ELECTRODOMESTICOS</a>
-                        <a class="nav-link nav__link activo" aria-current="page" href="accesorios.html">ACCESORIOS</a>
-                        <a class="nav-link nav__link" aria-current="page" href="contacto.html">CONTACTO</a>
-                    </div>
-                </div>
-            </div>
+    <section class="">
+        <input type="checkbox" id="btn-menu">
+        <label class="label__menu" for="btn-menu"><i class="fa fa-bars icon__Menu"></i><span
+                class="iconMEnu__span">Menu</span></label>
+        <nav class="menu">
+            <ul>
+                <li><a class="" aria-current="page" href="../index.html">HOME</a></li>
+                <li><a class="" aria-current="page" href="ofertas.html">OFERTAS</a></li>
+                <li><a class="" aria-current="page" href="tecnologias.html">TECNOLOGIA</a></li>
+                <li><a class="" aria-current="page" href="electrodomesticos.html">ELECTRODOMESTICOS</a></li>
+                <li><a class="activo" aria-current="page" href="accesorios.html">ACCESORIOS</a></li>
+                <li><a class="" aria-current="page" href="contacto.html">CONTACTO</a></li>
+            </ul>
         </nav>
     </section>
     <!-------------------------------------------------------------FIN MENU------------------------------------------------------------------------------------->
@@ -119,183 +109,302 @@
     <!---------------------------------------------------------INICIO GRID----------------------------------------------------------------------------------->
 
     <main>
-        <div class="grillaPadre">
-            <h1 class="h1__titulo1"><a href="#" class="h1__verMas">Accesorios</a></h2>
-            <div class="producto1 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/Auriculares3.jpg" alt="Auriculares Beats">
-                <div class="productoDetalle">
-                    <h3>$15.999</h3>
-                    <h5>Auriculares Beats</h5>
-                    <h6>MODELO: MME73AM/A</h6>
+        <div class="container container__anchoAl80">
+            <div class="row">
+                <!--
+                <div class="botonFiltrar">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-filter"></i> Filtrar Búsqueda de Producto
+                    </button>
                 </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
+                -->
+                <div class="filtroProductos mostrarFiltro productos col-lg-3 col-md-3 col-sm-12 collapse show"
+                    id="collapseExample">
+                    <div class="filtro">
+                        <article class="">
+                            <h4 class="">Sub Categorías</h4>
+                            <div class="">
+                                <ul class="subCategorias p-0">
+                                    <li><a href="#">Gamming</a></li>
+                                    <li><a href="#">SmarTv</a></li>
+                                    <li><a href="#">Celulares</a></li>
+                                    <li><a href="#">Oficina</a></li>
+                                    <li><a href="#">Bicicletas</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Hogar</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="mt-5">
+                            <h4 class="title">Marcas</h4>
+                            <div class="">
+                                <div class="p-0">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox" checked>
+                                        <span class="btn hoverRojo"> Apple </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn hoverRojo"> Samsung </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox" checked>
+                                        <span class="btn hoverRojo"> Philips </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox" checked>
+                                        <span class="btn hoverRojo"> Peabody </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox" checked>
+                                        <span class="btn hoverRojo"> Xiaomi </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="filtro__rangoPrecio mt-5">
+                            <h4 class="title">Rango Precio </h4>
+                            <div class="">
+                                <div class="p-0">
+                                    <input type="range" class="custom-range" min="0" max="100" name="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Min</label>
+                                            <input class="form-control" placeholder="$0" type="number">
+                                        </div>
+                                        <div class="form-group text-right col-md-6">
+                                            <label>Max</label>
+                                            <input class="form-control" placeholder="$1,0000" type="number">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-block btn-primary mt-2">Apply</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="mt-5">
+                            <h4 class="title">Descuentos </h4>
+                            <div class="">
+                                <div class="p-0">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn hoverRojo"> Desde 10% OFF </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn hoverRojo"> Desde 20% OFF </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn hoverRojo"> Desde 30% OFF </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn hoverRojo"> Desde 40% OFF </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--FIN Filtro Búsqueda-->
+                <div class="grillaPadre5 col-lg-9 col-md-9 col-sm-12 mt-5">
+                    <h1 class="h1__titulo1">
+                        <a href="#" class="h1__verMas">Accesorios</a>
+                    </h1>
+                    <div class="producto1 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/Auriculares3.jpg" alt="Auriculares Beats">
+                        <div class="productoDetalle">
+                            <h3>$15.999</h3>
+                            <h5>Auriculares Beats</h5>
+                            <h6>MODELO: MME73AM/A</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto2 productos card__css-manual">
+                        <img src="../img/protector ihpone.jpg" alt="Cargador Ihpone">
+                        <div class="productoDetalle">
+                            <h3>$29.997</h3>
+                            <h4>Funda Cargador Iphone</h4>
+                            <h6>Cargador Ihpone - Red</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto3 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/microfono.jpg" alt="Microfono Black">
+                        <div class="productoDetalle">
+                            <h3>$30,000</h3>
+                            <h5>Microfono Pro</h5>
+                            <h6>Microfono Pro Black</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto4 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/Auriculares2.jpg" alt="Auriculaes Beats">
+                        <div class="productoDetalle">
+                            <h3>$15.000</h3>
+                            <h5>Airucuales Beats</h5>
+                            <h6>MODELO: XIASNUQ</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto5 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/cableUsb.jpg" alt="Cable USB">
+                        <div class="productoDetalle">
+                            <h3>$999</h3>
+                            <h5>Cable USD</h5>
+                            <h6>MODELO: TipoResorte - Rose</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto6 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/candado.jpg" alt="Candado Digital">
+                        <div class="productoDetalle">
+                            <h3>$5998.000</h3>
+                            <h5>Candado Gitial</h5>
+                            <h6>MODELO: XASFQ Black</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto7 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <img src="../img/cafetera.jpg" alt="Cafetera Peabody">
+                        <div class="productoDetalle">
+                            <h3>$9999</h3>
+                            <h5>Cafetera Peabody</h5>
+                            <h6>MODELO: Bm190 6,7 Lts</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto8 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/silla2.jpg" alt="Silla Gammer">
+                        <div class="productoDetalle">
+                            <h3>$79.000</h3>
+                            <h5>Silla Gamming Violet</h5>
+                            <h6>MODELO: XMZQEE</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <h2 class="h2__titulo2">Ofertas <a href="ofertas.html" class="h2__verMas">Ver todas</a></h2>
+                    <div class="producto9 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/silla.jpg" alt="Silla Gamming Blanca">
+                        <div class="productoDetalle">
+                            <h3>$69.000</h3>
+                            <h5>Silla Rose Gamming</h5>
+                            <h6>MODELO: CMQAAA</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto10 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <img src="../img/reloj.jpg" alt="Reloj Rose">
+                        <div class="productoDetalle">
+                            <h3>$29.000</h3>
+                            <h5>Reloj Dama Smart</h5>
+                            <h6>MODELO: XAHIQ</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto11 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/reloj2.jpg" alt="Reloj Black">
+                        <div class="productoDetalle">
+                            <h3>$30.000</h3>
+                            <h5>Reloj Hombre Smart</h5>
+                            <h6>MODELO: RGXAHIQ</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
+                    <div class="producto12 productos card__css-manual">
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio
+                            Gratis</span>
+                        <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
+                        <img src="../img/batidora.jpg" alt="Batidora Peabody">
+                        <div class="productoDetalle">
+                            <h3>$55.000</h3>
+                            <h5>Batidora Peabody</h5>
+                            <h6>Planetaria Bm190 6,7 Lts</h6>
+                        </div>
+                        <div class="carrito">
+                            <a href="listaDeseos.html"><i class="fas fa-heart heart"></i></a>
+                            <i class="fas fa-eye eye"></i>
+                            <a href="pasarelaDePago.html"><i class="fas fa-shopping-cart shopping-car"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="producto2 productos card__css-manual">
-                <img src="../img/protector ihpone.jpg" alt="Cargador Ihpone">
-                <div class="productoDetalle">
-                    <h3>$29.997</h3>
-                    <h4>Funda Cargador Iphone</h4>
-                    <h6>Cargador Ihpone - Red</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto3 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/microfono.jpg" alt="Microfono Black">
-                <div class="productoDetalle">
-                    <h3>$30,000</h3>
-                    <h5>Microfono Pro</h5>
-                    <h6>Microfono Pro Black</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto4 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/Auriculares2.jpg" alt="Auriculaes Beats">
-                <div class="productoDetalle">
-                    <h3>$15.000</h3>
-                    <h5>Airucuales Beats</h5>
-                    <h6>MODELO: XIASNUQ</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto5 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/cableUsb.jpg" alt="Cable USB">
-                <div class="productoDetalle">
-                    <h3>$999</h3>
-                    <h5>Cable USD</h5>
-                    <h6>MODELO: TipoResorte - Rose</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto6 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/candado.jpg" alt="Candado Digital">
-                <div class="productoDetalle">
-                    <h3>$5998.000</h3>
-                    <h5>Candado Gitial</h5>
-                    <h6>MODELO: XASFQ Black</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto7 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <img src="../img/cafetera.jpg" alt="Cafetera Peabody">
-                <div class="productoDetalle">
-                    <h3>$9999</h3>
-                    <h5>Cafetera Peabody</h5>
-                    <h6>MODELO: Bm190 6,7 Lts</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto8 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/silla2.jpg" alt="Silla Gammer">
-                <div class="productoDetalle">
-                    <h3>$79.000</h3>
-                    <h5>Silla Gamming Violet</h5>
-                    <h6>MODELO: XMZQEE</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <h2 class="h2__titulo2">Ofertas <a href="ofertas.html" class="h2__verMas">Ver todas</a></h2>
-            <div class="producto9 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/silla.jpg" alt="Silla Gamming Blanca">
-                <div class="productoDetalle">
-                    <h3>$69.000</h3>
-                    <h5>Silla Rose Gamming</h5>
-                    <h6>MODELO: CMQAAA</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto10 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <img src="../img/reloj.jpg" alt="Reloj Rose">
-                <div class="productoDetalle">
-                    <h3>$29.000</h3>
-                    <h5>Reloj Dama Smart</h5>
-                    <h6>MODELO: XAHIQ</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto11 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/reloj2.jpg" alt="Reloj Black">
-                <div class="productoDetalle">
-                    <h3>$30.000</h3>
-                    <h5>Reloj Hombre Smart</h5>
-                    <h6>MODELO: RGXAHIQ</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
-            <div class="producto12 productos card__css-manual">
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Envio badge rounded">Envio Gratis</span>
-                <span id="" data-action="cart-can" class="cart_menu cart_menu_Nuevo badge rounded">Nuevo</span>
-                <img src="../img/batidora.jpg" alt="Batidora Peabody">
-                <div class="productoDetalle">
-                    <h3>$55.000</h3>
-                    <h5>Batidora Peabody</h5>
-                    <h6>Planetaria Bm190 6,7 Lts</h6>
-                </div>
-                <div class="carrito">
-                    <i class="fas fa-heart heart"></i>
-                    <i class="fas fa-eye eye"></i>
-                    <i class="fas fa-shopping-cart shopping-car"></i>
-                </div>
-            </div>
+        </div>
     </main>
+
     <!---------------------------------------------------------FIN GRID----------------------------------------------------------------------------------->
 
     <!--------------------------------------------------------- SUSCRIBIRSE---- -------------------------------------------------------------------------->
@@ -311,7 +420,7 @@
 
     <!--------------------------------------------------------- PAGINACION--------------------------------------------------------------------------->
     <nav aria-label="">
-        <ul class="d-flex  justify-content-center mt-5">
+        <ul class="d-flex  justify-content-center mt-5 p-0">
             <li class="page-item disabled">
                 <span class="page-link">Anterior</span>
             </li>

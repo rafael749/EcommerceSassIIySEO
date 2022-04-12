@@ -7,9 +7,15 @@
     color: #fbfbfb;
 }
 
+.nav__link{
+    padding: 0;
+    padding-top: 10px;
+}
+
 a {
     & span{
     color: white;
+    font-size: 14px;
     }
 }
 
@@ -27,6 +33,7 @@ a {
     font-size: 20px;
     cursor: pointer;
     padding-right: 24px;
+    margin-top: 10px;
 }
 
 .facebook{
@@ -47,8 +54,8 @@ a {
 
 @mixin redes_sociales-hover{
 transition: width 2s, height 2s;
--ms-transform: scale(1.4); /* IE 9 */
--webkit-transform: scale(1.4); /* Safari 3-8 */
+-ms-transform: scale(1.4);
+-webkit-transform: scale(1.4);
 transform: scale(1.4); 
 }
 
@@ -67,8 +74,9 @@ transform: scale(1.4);
 .instagram {
     display: inline-block;
     width: 17px;
-    height: 18px;
+    height: 17px;
     text-align: center;
+    margin-top: -10px;
     border-radius: 40px;
     color: #fff;
     font-size: 20px;
@@ -77,6 +85,7 @@ transform: scale(1.4);
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    transform: scale(1.05);
 }
 
 .instagram:hover{
@@ -91,6 +100,10 @@ transform: scale(1.4);
 
 .container__manualTopHeader{
     border-bottom:none;
+}
+
+.container__manualTopHeader-ul{
+    margin-left: -30px;
 }
 
 .img__logo{
