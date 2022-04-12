@@ -18,7 +18,7 @@
 
 a span {
   color: white;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .faq-izq {
   cursor: pointer;
@@ -530,127 +530,171 @@ html {
 /***********************************************************
 MEDIAS QUERYS
 ************************************************************/
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .label__menu {
-    padding-left: 5px; }
-  .sidebar-social-casero {
-    padding: 0; }
-  .iconMEnu__span {
-    display: none; }
-  .grillaPadre {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: flex-start;
-    gap: 1%;
-    margin: 10% 0;
-    padding: 0 8%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ececec;
-    border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h1__titulo1"  "producto1" "producto2" "producto3"  "producto4" "h2__titulo2" "producto5" "producto6" "producto7" "producto8"; }
-  .Suscribirse {
-    margin-top: 120%;
-    font-size: 13px; }
-  .Suscribirse form {
-    width: 300px; }
-  .Suscribirse form input {
-    width: 100%;
-    font-size: 1.1rem; }
-  .Suscribirse form button {
-    width: 80%;
-    font-size: 20px; }
-  .card-body {
-    flex: 0;
-    padding: 0; } }
+/*
+@media screen and (min-width:320px) and (max-width:480px){
 
-@media screen and (min-width: 481px) and (max-width: 600px) {
-  .label__menu {
-    padding-left: 20px; }
-  .sidebar-social-casero {
-    padding: 0; }
-  .grillaPadre {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: flex-start;
-    gap: 3%;
-    margin: 5% 0;
-    padding: 0 8%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ececec;
-    border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h1__titulo1 h1__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
-  .card__css-manual img {
-    width: 100%;
-    height: 250px;
-    object-fit: scale-down; }
-  .Suscribirse {
-    margin-top: 60%;
-    font-size: 15px; }
-  .Suscribirse form {
-    width: 450px; }
-  .Suscribirse form input {
-    font-size: 20px; }
-  .Suscribirse form button {
-    font-size: 20px; } }
+    .label__menu{
+        padding-left: 5px;
+    }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
-  .sidebar-social-casero {
-    padding: 0; }
-  .grillaPadre {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: flex-start;
-    gap: 3%;
-    margin: 5% 0;
-    padding: 0 8%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ececec;
-    border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h1__titulo1 h1__titulo1" "producto1 producto2" "producto3 producto4" "h2__titulo2 h2__titulo2" "producto5 producto6" "producto7 producto8"; }
-  .card__css-manual img {
-    width: 100%;
-    height: 250px;
-    object-fit: scale-down; }
-  .Suscribirse {
-    margin-top: 50%; } }
+    .sidebar-social-casero{
+        padding: 0;
+    }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .grillaPadre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: flex-start;
-    gap: 3%;
-    margin: 0% 0;
-    padding: 0 8%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ececec;
-    border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3" "producto4 . ." "h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7" "producto8 . ."; }
-  .card__css-manual img {
-    width: 100%; }
-  .Suscribirse {
-    margin-top: 40%; } }
+    .iconMEnu__span{
+        display: none;
+    }
+    .grillaPadre{
+        @include grilla(grid, repeat(1, 1fr), 50px, 0% 0, 0 8%);
 
-@media screen and (min-width: 1025px) {
-  .menu ul {
-    padding-left: 0%; } }
+        grid-template-areas:
+        "h1__titulo1" 
+        "producto1"
+        "producto2"
+        "producto3" 
+        "producto4"
+        "h2__titulo2"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8";
+    }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  .container__manualTopHeader-ul {
-    margin-left: -30px; } }
+    .Suscribirse {
+        margin-top: 120%;
+        font-size: 13px;
+    }
+    
+    .Suscribirse form{
+        width: 300px;
+    }
 
+    .Suscribirse form input {
+        width: 100%;
+    font-size: 1.1rem;
+    }
+
+    .Suscribirse form button {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .card-body {
+    flex:0;
+    padding:0;
+    }
+}
+*/
+/*
+@media screen and (min-width:481px) and (max-width:600px){
+
+    .label__menu{
+        padding-left: 20px;
+    }
+
+    .sidebar-social-casero{
+        padding: 0;
+    }
+
+    .grillaPadre{
+        @include grilla(grid, repeat(2, 1fr), 3%, 5% 0, 0 8%);
+        grid-template-areas:
+        "h1__titulo1 h1__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 60%;
+        font-size: 15px;
+    }
+    
+    .Suscribirse form{
+        width: 450px;
+    }
+
+    .Suscribirse form input {
+    font-size: 20px;
+    }
+
+    .Suscribirse form button {
+        font-size: 20px;
+    }
+}
+*/
+/*
+@media screen and (min-width:601px) and (max-width:768px){
+
+    .sidebar-social-casero{
+        padding: 0;
+    }
+
+    .grillaPadre{
+        @include grilla(grid, repeat(2, 1fr), 3%, 5% 0, 0 8%);
+
+        grid-template-areas:
+        "h1__titulo1 h1__titulo1"
+        "producto1 producto2"
+        "producto3 producto4"
+        "h2__titulo2 h2__titulo2"
+        "producto5 producto6"
+        "producto7 producto8";
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+        height: 250px;
+        object-fit: scale-down;
+    }
+
+    .Suscribirse {
+        margin-top: 50%;
+    }
+}
+*/
+/*
+@media screen and (min-width:769px) and (max-width: 1200px){
+
+    .grillaPadre{
+        @include grilla(grid, repeat(3, 1fr), 3%, 0% 0, 0 8%);
+
+        grid-template-areas:
+        "h1__titulo1 h1__titulo1 h1__titulo1"
+        "producto1 producto2 producto3"
+        "producto4 . ."
+        "h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7"
+        "producto8 . .";
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+    }
+
+    .Suscribirse {
+        margin-top: 40%;
+    }
+}
+@media screen and (min-width:1025px){
+    .menu ul {
+        padding-left: 0%;
+    }
+}
+@media screen and (min-width:993px) and (max-width: 1200px){
+    .container__manualTopHeader-ul{
+        margin-left: -30px;
+    }
+}
+*/
 /*
 @media screen and (min-width:1025px) and (max-width:1200px){
 
@@ -675,55 +719,75 @@ MEDIAS QUERYS
     }
 }
 */
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-  .grillaPadre {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8";
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: flex-start;
-    gap: 3%;
-    margin: 5% 0;
-    padding: 0 10%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #ececec;
-    border-top: 3px solid #d6d4d4;
-    grid-template-areas: "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1" "producto1 producto2 producto3 producto4" "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2" "producto5 producto6 producto7 producto8"; }
-  .card__css-manual img {
-    width: 100%; }
-  .Suscribirse {
-    margin-top: 20%; } }
+/*
+@media screen and (min-width:1201px) and (max-width : 1400px){
 
-@media screen and (min-width: 1400px) {
-  .container__manualTopHeader-ul {
-    margin-left: -30px; }
-  .menu ul {
-    padding-left: 5%; }
-  .container {
-    max-width: 80%; }
-  .card__css-manual img:hover {
-    transform: scale(1.15, 1.15);
-    transition: all .4s ease-in-out; }
-  .Suscribirse {
-    margin-top: 20%; } }
+    .grillaPadre{
+        @include grilla(grid, repeat(4, 1fr), 3%, 5% 0, 0 10%);
 
-@media screen and (max-width: 1200px) {
-  .card__css-manual img:hover {
-    transform: scale(1.05, 1.05);
-    transition: all .4s ease-in-out; } }
+        grid-template-areas:
+        "h1__titulo1 h1__titulo1 h1__titulo1 h1__titulo1"
+        "producto1 producto2 producto3 producto4"
+        "h2__titulo2 h2__titulo2 h2__titulo2 h2__titulo2"
+        "producto5 producto6 producto7 producto8";
+    }
+        
+    .card__css-manual img{
+        width: 100%;
+    }
 
-@media screen and (min-width: 769px) {
-  /* a partir de 769px aplica el efecto del buscador*/
-  @keyframes animate {
-    0%, 10%, 100% {
-      width: 0; }
-    70%, 90% {
-      width: 100%; } }
-  .ul__li a:hover, .ul__li a:focus {
-    background-size: 90% 2px;
-    color: #D10024; } }
+    .Suscribirse {
+        margin-top: 20%;
+    }
+}
+*/
+/*
+@media screen and (min-width:1400px){
 
+    .container__manualTopHeader-ul{
+        margin-left: -30px;
+    }
+    .menu ul {
+        padding-left: 5%;
+    }
+    .container{
+        max-width: 80%;
+    }
+    .card__css-manual img:hover{
+        transform: scale(1.15,1.15);
+        transition: all .4s ease-in-out;
+    }
+    .Suscribirse {
+        margin-top: 20%;
+    }
+}    
+
+@media screen and (max-width:1200px){
+
+    .card__css-manual img:hover{
+        transform: scale(1.05,1.05);
+        transition: all .4s ease-in-out;
+    }
+} 
+
+@media screen and (min-width:769px){
+
+    /* a partir de 769px aplica el efecto del buscador
+    @keyframes animate{
+        0%,10%,100%{
+        width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+
+    .ul__li a:hover, .ul__li a:focus {
+        background-size: 90% 2px;
+        color: $ColorRojoMain; 
+    }
+}
+*/
 /*******************************************
 Estilos Genericos
 ********************************************/
@@ -736,7 +800,7 @@ body {
   background-color: #ececec; }
 
 .imgPerfil {
-  width: 150px; }
+  width: 130px; }
 
 .modal-login {
   width: 320px; }
@@ -816,6 +880,9 @@ body {
 .page-item.active .page-link {
   background-color: #D10024;
   border-color: #D10024; }
+
+.imgPago {
+  width: 50%; }
 
 /************************************************************************
                 Grilla Productos
@@ -968,9 +1035,9 @@ li a:hover {
     justify-content: space-evenly;
     align-items: center;
     justify-items: flex-start;
-    gap: 1%;
+    gap: 50px;
     margin: 0% 0;
-    padding: 0 10%;
+    padding: 0 0%;
     font-family: 'Ubuntu', sans-serif;
     background-color: #ececec;
     grid-template-areas: "h1__titulo1"  "producto1" "producto2" "producto3"  "producto4" "h2__titulo2" "producto5" "producto6" "producto7" "producto8"; }
@@ -1077,3 +1144,33 @@ li a:hover {
     width: 100%; }
   .Suscribirse {
     margin-top: 40%; } }
+
+/*Agregados desde _mediaQuerys*/
+@media screen and (min-width: 1400px) {
+  .container__manualTopHeader-ul {
+    margin-left: -30px; }
+  .menu ul {
+    padding-left: 5%; }
+  .container {
+    max-width: 80%; }
+  .card__css-manual img:hover {
+    transform: scale(1.15, 1.15);
+    transition: all .4s ease-in-out; }
+  .Suscribirse {
+    margin-top: 20%; } }
+
+@media screen and (max-width: 1200px) {
+  .card__css-manual img:hover {
+    transform: scale(1.05, 1.05);
+    transition: all .4s ease-in-out; } }
+
+@media screen and (min-width: 769px) {
+  /* a partir de 769px aplica el efecto del buscador*/
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0; }
+    70%, 90% {
+      width: 100%; } }
+  .ul__li a:hover, .ul__li a:focus {
+    background-size: 90% 2px;
+    color: #D10024; } }

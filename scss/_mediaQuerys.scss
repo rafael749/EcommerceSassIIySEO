@@ -3,7 +3,7 @@
 MEDIAS QUERYS
 ************************************************************/
 
-
+/*
 @media screen and (min-width:320px) and (max-width:480px){
 
     .label__menu{
@@ -18,7 +18,7 @@ MEDIAS QUERYS
         display: none;
     }
     .grillaPadre{
-        @include grilla(grid, repeat(1, 1fr), 1%, 10% 0, 0 8%);
+        @include grilla(grid, repeat(1, 1fr), 50px, 0% 0, 0 8%);
 
         grid-template-areas:
         "h1__titulo1" 
@@ -57,7 +57,9 @@ MEDIAS QUERYS
     padding:0;
     }
 }
+*/
 
+/*
 @media screen and (min-width:481px) and (max-width:600px){
 
     .label__menu{
@@ -102,7 +104,9 @@ MEDIAS QUERYS
         font-size: 20px;
     }
 }
+*/
 
+/*
 @media screen and (min-width:601px) and (max-width:768px){
 
     .sidebar-social-casero{
@@ -131,7 +135,9 @@ MEDIAS QUERYS
         margin-top: 50%;
     }
 }
+*/
 
+/*
 @media screen and (min-width:769px) and (max-width: 1200px){
 
     .grillaPadre{
@@ -164,6 +170,8 @@ MEDIAS QUERYS
         margin-left: -30px;
     }
 }
+*/
+
 /*
 @media screen and (min-width:1025px) and (max-width:1200px){
 
@@ -188,6 +196,8 @@ MEDIAS QUERYS
     }
 }
 */
+
+/*
 @media screen and (min-width:1201px) and (max-width : 1400px){
 
     .grillaPadre{
@@ -208,7 +218,9 @@ MEDIAS QUERYS
         margin-top: 20%;
     }
 }
+*/
 
+/*
 @media screen and (min-width:1400px){
 
     .container__manualTopHeader-ul{
@@ -239,7 +251,7 @@ MEDIAS QUERYS
 
 @media screen and (min-width:769px){
 
-    /* a partir de 769px aplica el efecto del buscador*/
+    /* a partir de 769px aplica el efecto del buscador
     @keyframes animate{
         0%,10%,100%{
         width: 0;
@@ -254,3 +266,4 @@ MEDIAS QUERYS
         color: $ColorRojoMain; 
     }
 }
+*/

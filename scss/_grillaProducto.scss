@@ -210,7 +210,7 @@ li a:hover {
         padding: 0;
     }
     .grillaPadre5{
-        @include grilla1(grid, repeat(1, 1fr), 1%, 0% 0, 0 10%);
+        @include grilla1(grid, repeat(1, 1fr), 50px, 0% 0, 0 0%);
 
         grid-template-areas:
         "h1__titulo1" 
@@ -372,5 +372,54 @@ li a:hover {
 
     .Suscribirse {
         margin-top: 40%;
+    }
+}
+
+
+/*Agregados desde _mediaQuerys*/
+
+@media screen and (min-width:1400px){
+
+    .container__manualTopHeader-ul{
+        margin-left: -30px;
+    }
+    .menu ul {
+        padding-left: 5%;
+    }
+    .container{
+        max-width: 80%;
+    }
+    .card__css-manual img:hover{
+        transform: scale(1.15,1.15);
+        transition: all .4s ease-in-out;
+    }
+    .Suscribirse {
+        margin-top: 20%;
+    }
+}    
+
+@media screen and (max-width:1200px){
+
+    .card__css-manual img:hover{
+        transform: scale(1.05,1.05);
+        transition: all .4s ease-in-out;
+    }
+} 
+
+@media screen and (min-width:769px){
+
+    /* a partir de 769px aplica el efecto del buscador*/
+    @keyframes animate{
+        0%,10%,100%{
+        width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+
+    .ul__li a:hover, .ul__li a:focus {
+        background-size: 90% 2px;
+        color: $ColorRojoMain; 
     }
 }
